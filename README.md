@@ -11,6 +11,10 @@ based  on the packages:
 sys
 re
 bibtexparser
+<<<<<<< HEAD
 bibtexparser
+=======
+bibtexparser.model 
+>>>>>>> 6f57a794e2b70cc6196a9ecd888f3467397f4526
 string
 spacy

@@ -1,7 +1,16 @@
-### Purpose of this program 
+The new version of glass.bib and the reformatting program:
+The program can format your .bib file as follows:
+1. The key is the first author’s last name + year + a short summary of the title (generated automatically using natural language processing; this summary is added only when the key duplicates a previous one).
+2. Keep the key and title on the same line.
+3. All keys use lowercase characters.
+Program usage: python format_bib.py <your bib file>
 
-The program parses the latex citation library files (*.bib) into instances of different classes according to their types, and prints them into a new file with a tidy form. In addition, since it parses the text file into structured data, many operations can be done which would be tedious for human beings. For example, one can check duplications in the citation, which is also included in this program.
+This program will deduplicate entries based on the title.
 
-### How to use
-
-Just run the file 'bib_reformat.py', only standard packages are used. Change variables 'old_bib_name' and 'new_bib_name' in that file if necessary.
+based  on the packages:
+sys
+re
+bibtexparser
+bibtexparser.model 
+string
+spacy
